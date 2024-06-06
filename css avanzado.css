@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Pseudo-clases */
+a:hover {
+    color: red; /* Cambia el color del enlace a rojo cuando el cursor está sobre él */
+}
+
+input:focus {
+    border-color: blue; /* Cambia el color del borde del input a azul cuando está enfocado */
+}
+
+button:active {
+    background-color: green; /* Cambia el color de fondo del botón a verde mientras se hace clic */
+}
+
+/* Pseudo-elementos */
+h1::before {
+    content: "👉 "; /* Añade una flecha antes del texto del h1 */
+}
+
+h1::after {
+    content: " 👈"; /* Añade una flecha después del texto del h1 */
+}
+
+/* Transiciones */
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.button:hover {
+    background-color: red; /* Cambia el color de fondo a rojo al pasar el cursor */
+}
+
+/* Animaciones */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s; /* La animación dura 4 segundos */
+}
+
+/* Media queries */
+body {
+    background-color: lightgrey; /* Color de fondo por defecto */
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue; /* Cambia el color de fondo a azul claro en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-color: lightgreen; /* Cambia el color de fondo a verde claro en pantallas medianas */
+    }
+}
